@@ -60,6 +60,15 @@
           inputsFrom = [ config.devShells.default ];
           packages = [ pkgs.ghc ];
         };
+
+        jetbrains = pkgs.mkShell {
+          inputsFrom = [ config.devShells.default ];
+          packages = with pkgs; [
+            gradle
+            kotlin
+            jdk
+          ];
+        };
       };
     };
 }
