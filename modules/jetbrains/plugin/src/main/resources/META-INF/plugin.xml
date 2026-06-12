@@ -1,0 +1,18 @@
+<idea-plugin>
+    <id>io.github.nix-community.stylix</id>
+    <name>Stylix Theme</name>
+    <category>UI</category>
+    <vendor url="https://github.com/nix-community/stylix">Nix Community</vendor>
+
+    <description><![CDATA[
+        <p>Stylix Theme.</p>
+        <br>
+        <p>After installing the theme, go to Preferences | Appearance & Behavior | Appearance and select the Stylix theme from the list.</p>
+    ]]></description>
+
+    <depends>com.intellij.modules.platform</depends>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <themeProvider id="f92a0fa7-1a98-47cd-b5cb-78ff67e6f4f3" path="/one_dark.theme.json"/>
+    </extensions>
+</idea-plugin>
