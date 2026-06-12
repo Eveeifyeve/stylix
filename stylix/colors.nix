@@ -2,7 +2,6 @@
 {
   config.lib.stylix = {
     mkHexColor = color: "0x${lib.removePrefix "#" color}";
-
     mkOpacityHexColor =
       let
         opacityHex =
